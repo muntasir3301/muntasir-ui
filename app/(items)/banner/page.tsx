@@ -5,7 +5,7 @@ import Banner_3 from "./banner-3/page";
 import Banner_4 from "./banner-4/page";
 import Banner_5 from "./banner-5/page";
 
-export default async function Card() {
+export default async function Banner() {
 const components = [
   { name: "banner-1", title:"Tailwind", component: Banner_1 },
   { name: "banner-2", title:"Tailwind", component: Banner_2 },
