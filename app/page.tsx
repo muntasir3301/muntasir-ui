@@ -29,7 +29,7 @@ export default async function Home() {
 function ItemBox({title}: {title: string}) {
   return (
     <>
-        <Link href={title.toLowerCase()} className="text-xl border py-12 shadow text-center">{title}</Link>
+        <Link href={title.toLowerCase()} className="text-xl border border-gray-200 py-12 shadow text-center">{title}</Link>
     </>
   )
 }
