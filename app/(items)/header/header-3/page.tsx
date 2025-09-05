@@ -1,13 +1,8 @@
-// npx shadcn@latest init
-// npx shadcn@latest add button
-// npx shadcn@latest add sheet
-// Add tailwind container
-
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export default function Header_5() {
+export default function Header_3() {
     const pages = [
         {name : "Home", href: "/"},
         {name : "About", href: "/about"},
@@ -20,7 +15,7 @@ export default function Header_5() {
       
       {/* Logo  */}
       <Link href="/" className="mr-6" prefetch={false}>
-        <Logo className="h-6 w-6" />
+        <Logo />
       </Link>
 
         <nav className="ml-auto hidden lg:flex gap-2">
@@ -42,7 +37,7 @@ export default function Header_5() {
         {/* Mobile menu Icon  */}
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden ml-auto">
-            <MenuIcon className="h-6 w-6" />
+            <MenuIcon />
           </Button>
         </SheetTrigger>
 
@@ -50,7 +45,7 @@ export default function Header_5() {
         <SheetContent side="left">
           {/* Menu title  */}
           <Link href="#" className="mr-6 lg:flex" prefetch={false}>
-            <Logo className="h-6 w-6" />
+            <Logo/>
           </Link>
           {/* Menu links  */}
          <div className="grid gap-2 py-6">
@@ -71,10 +66,9 @@ export default function Header_5() {
   )
 }
 
-function MenuIcon(props) {
+function MenuIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -92,7 +86,7 @@ function MenuIcon(props) {
   )
 }
 
-function Logo(props) {
+function Logo() {
   return (
     <h2 className="text-2xl">Muntasir</h2>
   )

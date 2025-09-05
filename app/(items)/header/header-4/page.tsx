@@ -1,5 +1,5 @@
 
-export default function Header_6() {
+export default function Header_4() {
   return (
     <header className="text-slate-700 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 lg:mx-auto lg:flex-row lg:items-center">
     <a href="#" className="flex items-center whitespace-nowrap text-2xl font-black">
@@ -8,8 +8,8 @@ export default function Header_6() {
       </span>
       spline
     </a>
-    <input type="checkbox" className="peer hidden" id="navbar-open" achecked />
-    <label className="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
+    <input type="checkbox" className="peer hidden" id="navbar-open" checked={true}  />
+    <label className="absolute top-5 right-5 cursor-pointer lg:hidden" htmlFor="navbar-open">
       <span className="sr-only">Toggle Navigation</span>
       <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
