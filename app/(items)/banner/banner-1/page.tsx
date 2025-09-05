@@ -10,7 +10,7 @@ export default function Banner_1() {
       </video>
 
       {/* Overlay to darken the video (optional) */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Content */}
       <div className="relative z-20 text-center text-white">
