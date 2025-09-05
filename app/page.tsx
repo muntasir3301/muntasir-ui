@@ -1,5 +1,8 @@
-import CodeEditor from '@/components/displayFormet/CodeEditor';
-import ItemBox from '../components/ItemBox'
+// import CodeEditor from '@/components/displayFormet/CodeEditor';
+
+import Link from "next/link";
+
+// import ItemBox from '../components/ItemBox'
 export default async function Home() {
   const Items = ["Header", "Footer", "Banner", "Contact", "List", "Box", "Blog", "Button", "Section", "Card", "Carousal", "Input", "Dashboard", "Error", "Faq", "Feature", "Gallery", "Login", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
 
@@ -20,4 +23,13 @@ export default async function Home() {
       </section>
     </>
   );
+}
+
+
+function ItemBox({title}: {title: string}) {
+  return (
+    <>
+        <Link href={title.toLowerCase()} className="text-xl border py-12 shadow text-center">{title}</Link>
+    </>
+  )
 }
