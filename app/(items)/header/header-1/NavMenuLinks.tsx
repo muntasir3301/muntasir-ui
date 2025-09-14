@@ -21,7 +21,7 @@ const NavMenuLinks = () => {
     ]
 
     return (
-            <ul className="md:flex md:flex-wrap md:items-center gap-8 text-lg md:text-[15px] space-y-5 md:space-y-0 ">
+            <ul className="md:flex md:flex-wrap md:items-center gap-8 text-lg md:text-[15px] space-y-5 md:space-y-0">
                 {
                     pages.map((item, i)=>
                         <li key={i}>
@@ -30,7 +30,7 @@ const NavMenuLinks = () => {
                     )
                 }
                 <Link href={'/contact'}>
-                  <button className="px-5 py-2 rounded bg-sky-300 cursor-pointer">Contact</button>
+                  <button className="px-4 py-2 rounded text-sm bg-blue-600  text-white cursor-pointer">Contact</button>
                 </Link>
             </ul>
     );

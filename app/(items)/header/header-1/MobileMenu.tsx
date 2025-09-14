@@ -24,7 +24,6 @@ const MobileMenu = () => {
             <button onClick={() => setOpen(true)} className="p-5 text-3xl text-gray-800" aria-label="Open menu">
                 <IoMenuSharp/>
             </button>
-<div className="text-4xl">Johfa</div>
             {/* Overlay */}
             <div className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 ${
                 open ? 'opacity-100' : 'opacity-0 pointer-events-none'
