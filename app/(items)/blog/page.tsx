@@ -7,7 +7,7 @@ import Blog_5 from "./blog-5/page";
 import Blog_6 from "./blog-6/page";
 import Blog_7 from "./blog-7/page";
 
-export default async function Banner() {
+export default async function Blog() {
 const components = [
   { name: "blog-1", title:"Tailwind", component: Blog_1 },
   { name: "blog-2", title:"Tailwind", component: Blog_2 },

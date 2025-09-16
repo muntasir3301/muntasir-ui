@@ -4,7 +4,7 @@ import Header_2 from "./header-2/page";
 import Header_3 from "./header-3/page";
 import Header_4 from "./header-2/page";
 
-export default async function Card() {
+export default async function Header() {
   const components = [
 	{ name: "header-1", title: "Tailwind CSS", component: Header_1 },
 	{ name: "header-2", title: "Tailwind CSS", component: Header_2 },

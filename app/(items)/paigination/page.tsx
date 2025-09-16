@@ -3,7 +3,7 @@ import Paigination_1 from "./paigination-1/page";
 import Paigination_2 from "./paigination-2/page";
 import Paigination_3 from "./paigination-3/page";
 
-export default async function Banner() {
+export default async function Paigination() {
 const components = [
   { name: "paigination-1", title:"Tailwind", component: Paigination_1 },
   { name: "paigination-2", title:"Tailwind", component: Paigination_2 },

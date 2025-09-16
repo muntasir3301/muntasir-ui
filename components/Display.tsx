@@ -14,12 +14,13 @@ const source = "https://github.com/muntasir3301/muntasir-ui/blob/main/app/(items
 	<section className="py-12">
 		<div className="container">
 			{
-				components.map(({name, title, component: Component}: ComponentsProps)=>
+				components.map(({name, title, component: Component}: ComponentsProps, i)=>
 				  <div key={name} className="py-6">
 					<div className="flex justify-between items-center mb-4">
 						{/* Title  */}
-						<div>
-							<h2 className="text-xl border-l-[3px] border-teal-700 pl-2">{title}</h2>
+						<div className="flex items-start border-l-[3px] border-teal-700 pl-2">
+							<h2 className="text-xl">{title}</h2>
+					        <span className="text-[13px] ml-1">{i+1}</span>
 						</div>
 						{/* Buttons  */}
 						<div className="flex gap-3 md:gap-4 text-xs md:text-sm">

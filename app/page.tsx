@@ -4,7 +4,16 @@ import Link from "next/link";
 
 // import ItemBox from '../components/ItemBox'
 export default async function Home() {
-  const Items = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "List", "Box", "Blog", "Button", "Section", "Card", "Carousal", "Input", "Dashboard", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
+  const Items = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "Dashboard", "Section", "Button", "List", "Box", "Blog", "Card", "Carousal", "Input", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
+
+  // user profile 
+  // settings
+
+  // for common section 
+  // Start with nextjs
+  // start with expressJs
+  // how to keep layout full with for any page
+  // 
 
 
   return (

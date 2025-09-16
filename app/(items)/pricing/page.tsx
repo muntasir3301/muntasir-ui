@@ -5,7 +5,7 @@ import Pricing_3 from "./pricing-3/page";
 import Pricing_4 from "./pricing-4/page";
 import Pricing_5 from "./pricing-5/page";
 
-export default async function Banner() {
+export default async function Pricing() {
 const components = [
   { name: "pricing-1", title:"Tailwind", component: Pricing_1 },
   { name: "pricing-2", title:"Tailwind", component: Pricing_2 },
