@@ -2,7 +2,7 @@
 
 import { FaCheck, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { MdOutlineErrorOutline } from "react-icons/md";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
