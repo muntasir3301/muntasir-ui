@@ -2,6 +2,8 @@ import Link from "next/link";
 import MobileMenu from "./mobile-view/MobileMenu";
 import { FaGithub, FaRocket } from "react-icons/fa";
 import SiteNavMenuLinks from "./NavMenuLinks";
+import { InputGroup, InputGroupAddon, InputGroupInput } from "../ui/input-group";
+import { Search } from "lucide-react";
 
 const Header = () => {
   return (
@@ -12,7 +14,7 @@ const Header = () => {
         {/* Logo & Nav Links  */}
         <div className="flex items-center gap-10">
           <Link href={"/"}>
-            <h2 className="text-2xl flex gap-2 items-center"> 
+            <h2 className="text-lg flex gap-2 items-center"> 
               <FaRocket className="text-orange-600"/> 
               Muntasir Ui
             </h2>
@@ -24,10 +26,18 @@ const Header = () => {
         </div>
 
         {/* Search & Github Link  */}
-        <div className="hidden md:flex items-center gap-4">
-          <input type="text" placeholder="Search componets" />
+        <div className="hidden md:flex items-center gap-6">
+          <InputGroup className="w-88 focus:outline-0">
+            <InputGroupInput placeholder="Search..." />
+            <InputGroupAddon>
+              <Search />
+            </InputGroupAddon>
+            <InputGroupAddon align="inline-end">12 results</InputGroupAddon>
+          </InputGroup>
+
+          {/* <input type="text" placeholder="Search componets" /> */}
           <Link target="_blank" href={'https://github.com/muntasir3301/muntasir-ui'}>
-              <FaGithub size={18} className="text-orange-500"/>
+              <FaGithub size={20} className="text-orange-500"/>
           </Link>
         </div>
       </div>
