@@ -1,10 +1,17 @@
 // import CodeEditor from '@/components/displayFormet/CodeEditor';
+"use client";
 
-import Link from "next/link";
+import DisplayItemBox from "@/components/item-box/DisplayItemBox";
+import { useState } from "react";
 
-// import ItemBox from '../components/ItemBox'
-export default async function Home() {
-  const Items = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "Dashboard", "Section", "Button", "List", "Box", "Blog", "Card", "Carousal", "Input", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
+const shadcnItems = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "Dashboard", "Section", "Button", "List", "Box", "Blog", "Card", "Carousal", "Input", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
+
+const customItems = ["new", "Nothings"];
+
+
+export default function Home() {
+  const [codeType, setCodeType] = useState("shadcn");
+
 
   // user profile 
   // settings
@@ -14,6 +21,13 @@ export default async function Home() {
   // start with expressJs
   // how to keep layout full with for any page
   // 
+  const handleTypeChange = (type: string)=>{
+    if(type === "custom"){
+      setCodeType("custom");
+    }else{
+      setCodeType("shadcn");
+    }
+  }
 
 
   return (
@@ -23,8 +37,8 @@ export default async function Home() {
         <h2 className="text-4xl mb-10 text-center">All About Tailwind & ShadCn</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-5">
-            {Items.map((ele) => (
-              <ItemBox key={ele} title={ele} />
+            {shadcnItems.map((ele) => (
+              <DisplayItemBox key={ele} title={ele} />
             ))}
           </div>  
 
@@ -32,13 +46,4 @@ export default async function Home() {
       </section>
     </>
   );
-}
-
-
-function ItemBox({title}: {title: string}) {
-  return (
-    <>
-        <Link href={title.toLowerCase()} className="text-xl border border-gray-200 py-12 shadow text-center">{title}</Link>
-    </>
-  )
 }
