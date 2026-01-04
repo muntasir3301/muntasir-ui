@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import NavMenuLinks from "./NavMenuLinks";
+import NavMenuLinks from "../NavMenuLinks";
 import { IoMenuSharp } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";

@@ -10,3 +10,10 @@ const components = [
   <Display components={components}/>
   );
 }
+
+
+
+// "paths": {
+//       "@/*": ["./*"],
+//       "@public/*": ["./public/*"]
+//     }
