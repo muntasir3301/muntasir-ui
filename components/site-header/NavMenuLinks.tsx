@@ -21,16 +21,17 @@ const pages = [
 
 export default function SiteNavMenuLinks(){
 
-
     return (
-            <ul className="md:flex md:flex-wrap md:items-center gap-8 text-lg md:text-sm space-y-5 md:space-y-0">
-                {
-                    pages.map((item, i)=>
-                        <li key={i}>
-                            <Link href={item.link}>{item.name}</Link>
-                        </li>
-                    )
-                }
-            </ul>
+        <ul className="md:flex md:flex-wrap md:items-center gap- text-lg md:text-sm space-y-5 md:space-y-0">
+            {
+                pages.map((item, i)=>
+                    <li key={i}>
+                        <Link className="text-[#171717] hover:text-black px-3 py-1 hover:bg-gray-100 rounded" href={item.link}>
+                            {item.name}
+                        </Link>
+                    </li>
+                )
+            }
+        </ul>
     );
 };
