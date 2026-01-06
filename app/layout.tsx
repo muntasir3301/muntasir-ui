@@ -32,7 +32,9 @@ export default function RootLayout({
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
         <Header/>
-        {children}
+        <div className="min-h-[80vh]">
+          {children}
+        </div>
         <SiteFooter/>
       </body>
     </html>

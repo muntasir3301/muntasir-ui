@@ -1,49 +1,22 @@
-// import CodeEditor from '@/components/displayFormet/CodeEditor';
-"use client";
-
-import DisplayItemBox from "@/components/item-box/DisplayItemBox";
-import { useState } from "react";
-
-const shadcnItems = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "Dashboard", "Section", "Button", "List", "Box", "Blog", "Card", "Carousal", "Input", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
-
-const customItems = ["new", "Nothings"];
-
 
 export default function Home() {
-  const [codeType, setCodeType] = useState("shadcn");
-
-
-  // user profile 
-  // settings
-
-  // for common section 
-  // Start with nextjs
-  // start with expressJs
-  // how to keep layout full with for any page
-  // 
-  const handleTypeChange = (type: string)=>{
-    if(type === "custom"){
-      setCodeType("custom");
-    }else{
-      setCodeType("shadcn");
-    }
-  }
-
-
   return (
-    <>
-      <section className='my-12'>
-        <div className="container">
-        <h2 className="text-4xl mb-10 text-center">All About Tailwind & ShadCn</h2>
+    <div className="container">
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-5">
-            {shadcnItems.map((ele) => (
-              <DisplayItemBox key={ele} title={ele} />
-            ))}
-          </div>  
+      <div className="flex flex-col items-center text-gray-500 py-12">
+        <h2 className="text-5xl bold text-black mb-5">No more ugly Libraries</h2>
+        <p>MuntasirUI is open source and powered by open source software.</p>
+      </div>
 
-        </div>
-      </section>
-    </>
-  );
+
+      <div className="flex flex-col items-center py-12 text-gray-500">
+        <h2 className="text-5xl bold text-black mb-5">Proudly Open Source</h2>
+        <p>MuntasirUI is open source and powered by open source software.</p>
+        <p>The code is available on 
+          <a className="underline underline-offset-4 font-semibold text-gray-900 ml-1" target='_blank' href="https://github.com/muntasir3301/muntasir-ui">GitHub</a>.
+        </p>
+      </div>
+
+    </div>
+  )
 }

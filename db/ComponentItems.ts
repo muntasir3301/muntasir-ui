@@ -1,0 +1,1 @@
+export const componentItems = ["Common", "Header", "Footer", "Login", "Register", "Banner", "Contact", "Dashboard", "Section", "Button", "List", "Box", "Blog", "Card", "Carousal", "Input", "Error", "Faq", "Feature", "Gallery", "Paigination", "Pricing", "Profile", "Review", "ShopingCart", "Team", "Testimonial", "Weather"];
