@@ -8,7 +8,7 @@ const pages = [
     // },
     {
         "name": "Documentation",
-        "link": "/about",
+        "link": "/dccumentation",
         "icon" : BookOpen,
     },{
         "name": "Components",
@@ -16,12 +16,12 @@ const pages = [
         "icon" : Shapes,
     },{
         "name": "Templates",
-        "link": "/about", 
+        "link": "/templates", 
         "icon" : LayoutPanelTop,
     },
     {
         "name": "Guides",
-        "link": "/about",
+        "link": "/guides",
         "icon" : Notebook,
     }
     // {

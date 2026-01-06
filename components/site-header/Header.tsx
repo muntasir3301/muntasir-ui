@@ -30,7 +30,7 @@ const Header = () => {
 
         {/* Search & Github & Theme Switch */}
         <div className="hidden md:flex items-center gap-2">
-          <SearchComponents/>
+            <SearchComponents/>
               <hr className="border-[1px] border-gray-200 h-4 " />
             <GithubStars/>
               <hr className="border-[1px] border-gray-200 h-4 " />
