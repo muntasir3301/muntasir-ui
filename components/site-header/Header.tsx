@@ -1,23 +1,25 @@
 import Link from "next/link";
 import MobileMenu from "./mobile-view/MobileMenu";
-import { FaRocket } from "react-icons/fa";
 import SiteNavMenuLinks from "./NavMenuLinks";
 import GithubStars from "@/components/site-header/github-stars/GithubStars";
 import ThemeSwitch from "./theme-switch/ThemeSwitch";
 import SearchComponents from "./search/SearchComponents";
+import { Rotate3d } from "lucide-react";
 
 const Header = () => {
   return (
     <nav
-      className={`shadow py-2.5 sticky top-0 border-b border-white z-50 bg-white/95`}
+      className={`py-2 sticky top-0 border-b border-white z-50
+      bg-white/90 text-base-content flex h-14 w-full [transform:translate3d(0,0,0)] justify-center backdrop-blur transition-shadow duration-100 print:hidden
+      shadow-xs`}
     >
       <div className="container flex justify-between items-center">
         {/* Logo & Nav Links  */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-6">
           <Link href={"/"}>
-            <h2 className="text-lg flex gap-2 items-center"> 
-              <FaRocket className="text-orange-600"/> 
-              Muntasir Ui
+            <h2 className="text-lg font-semibold flex gap-1 items-center"> 
+              <Rotate3d className="text-orange-600"/> 
+              MuntasirUI
             </h2>
           </Link>
 
