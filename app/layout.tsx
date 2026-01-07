@@ -17,8 +17,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hello World! Home",
-  description: "Full stack AI power Nextjs Application",
+  title: "Raw Tailwind CSS Components Library --muntasir/ui",
+  description: "Raw custom css and tailwind classes ui component library to avaid ugly packages installation.",
 };
 
 export default function RootLayout({
