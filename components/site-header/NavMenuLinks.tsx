@@ -2,10 +2,6 @@ import { BookOpen, LayoutPanelTop, Notebook, Shapes } from "lucide-react";
 import Link from "next/link";
 
 const pages = [
-    // {
-    //     "name": "Home",
-    //     "link": "/"
-    // },
     {
         "name": "Documentation",
         "link": "/dccumentation",
@@ -41,7 +37,7 @@ export default function SiteNavMenuLinks(){
                         <li key={i}>
                             <Link
                                 style={{fontWeight: 500}}
-                                className="flex items-center gap-1 text-[#171717] hover:text-black px-3 py-1 hover:bg-gray-100 rounded"
+                                className="flex items-center gap-1 text-[#171717] hover:text-black px-3 py-1 hover:bg-gray-100 transition-all duration-200 rounded"
                                 href={item.link}
                             >
                                 <NavIcon size={13}/>
