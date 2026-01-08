@@ -4,11 +4,11 @@ import Link from "next/link";
 const pages = [
     {
         "name": "Documentation",
-        "link": "/dccumentation",
+        "link": "/docs",
         "icon" : BookOpen,
     },{
         "name": "Components",
-        "link": "/about", 
+        "link": "/docs/components", 
         "icon" : Shapes,
     },{
         "name": "Templates",

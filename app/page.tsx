@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
       <PageHeadingSection 
+        className="py-20"
         title="The Foundation for your Design System"
         width="max-w-160 text-center"
         description="A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code."
@@ -34,7 +35,7 @@ export default function Home() {
                 )
               }
           </div>
-          <p className="text-gray-500 mt-6 text-center text-lg">Taxonomy also includes a blog and a full-featured documentation site built using Contentlayer and MDX.</p>
+          <p className="text-gray-500 mt-6 text-center text-lg">MuntasirUI also includes a blog and a full-featured documentation site built using Contentlayer and MDX.</p>
         </div>
       </div>
 
