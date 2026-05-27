@@ -1,6 +1,8 @@
 
 export default function Components() {
   return (
-    <div>Components</div>
+    <>
+      <h2>Hello Wordl</h2>
+    </>
   )
 }

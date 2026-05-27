@@ -17,8 +17,8 @@ const Header = () => {
         {/* Logo & Nav Links  */}
         <div className="flex items-center gap-6">
           <Link href={"/"}>
-            <h2 className="text-lg font-semibold flex gap-1 items-center"> 
-              <Rotate3d className="text-orange-600"/> 
+            <h2 className="text-lg font-semibold flex gap-1 items-center">
+              <Rotate3d className="text-orange-600" />
               MuntasirUI
             </h2>
           </Link>
@@ -30,11 +30,11 @@ const Header = () => {
 
         {/* Search & Github & Theme Switch */}
         <div className="hidden md:flex items-center gap-2">
-            <SearchComponents/>
-              <hr className="border-[1px] border-gray-200 h-4 " />
-            <GithubStars/>
-              <hr className="border-[1px] border-gray-200 h-4 " />
-            <ThemeSwitch/>
+          <SearchComponents />
+          <hr className="border-[1px] border-gray-200 h-4 " />
+          <GithubStars />
+          <hr className="border-[1px] border-gray-200 h-4 " />
+          <ThemeSwitch />
         </div>
       </div>
 
